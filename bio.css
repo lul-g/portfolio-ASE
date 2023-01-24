@@ -30,6 +30,10 @@
     font-family: var(--title-font-audiowide);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
+
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 .bio {
     display: grid;
@@ -40,10 +44,7 @@
 .bio .txt {
     text-align: center;
 }
-.bio .txt h1 {
-    font-size: 5rem;
 
-}
 .bio .txt p {
     font-size: 2rem;
     font-weight: 600;

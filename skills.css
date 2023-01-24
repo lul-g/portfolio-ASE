@@ -27,7 +27,7 @@
   }
 
   .skills {
-    margin-top: 15rem;
+    margin: 15rem 0;
     text-align: center;
 
     display: flex;
@@ -39,16 +39,18 @@
     margin-bottom: 8rem;
   }
   .contain {
+    margin: 0 auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
+    width: 70%;
   }
   .imgs {
     width: 30%;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem 0;
+    gap: 5rem;
   }
   .imgs li {
     width: 80px;

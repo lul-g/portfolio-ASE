@@ -42,9 +42,9 @@ li,a {
 body, html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    /* height: 800vh; */
     scroll-padding-top: 9.5rem;
     font-size: 62%;
-    height: 1000vh;
     background-color: #edf2f8 !important;
 
 }
@@ -125,8 +125,8 @@ nav input:checked ~ label i{
     position: absolute;
     top: 5rem;
     left: 5rem;
-    height: 13rem;
-    aspect-ratio: 2.2/1;
+    height: 11rem;
+    aspect-ratio: 2.3/1;
     padding: 0;
     background: #edf2f8;
     border-radius: 1.5rem;
@@ -206,7 +206,7 @@ nav input:checked ~ label i{
     aspect-ratio: 1/1;
     border-radius: 100%;
 
-    box-shadow: 0 0 .5rem .1rem #6b7688;
+    box-shadow: 0 0 5rem .1rem #6b7688;
     cursor: pointer;
 }
 .home .img img {
