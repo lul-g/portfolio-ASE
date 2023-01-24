@@ -27,7 +27,9 @@
   }
 
   .skills {
-    margin: 15rem 0;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    height: 55rem;
     text-align: center;
 
     display: flex;
@@ -43,7 +45,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    width: 70%;
+    width: 80%;
   }
   .imgs {
     width: 30%;
@@ -96,4 +98,38 @@
     color: #00000a6a;
     font-weight: 900;
     
+  }
+
+  @media (max-width: 1100px) {
+    .skills {
+      height: 100rem;
+    }
+    .contain {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5rem 0;
+      width: 100%;
+    }
+    .contain .imgs, .contain .txts {
+      width: 50vw;
+    }
+  }
+  @media (max-width: 700px) {
+    .contain .imgs, .contain .txts {
+      width: 70vw;
+    }
+  }
+  @media (max-width: 500px) {
+    .contain .imgs {
+      grid-template-columns: repeat(2, auto);
+    }
+    .contain .imgs, .contain .txts {
+      width: 50vw;
+    }
+  }
+  @media (max-width: 400px) {
+    .contain .imgs, .contain .txts {
+      width: 80vw;
+    }
   }

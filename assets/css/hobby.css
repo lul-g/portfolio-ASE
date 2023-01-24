@@ -28,8 +28,6 @@
 .hobbies {
     display: grid;
     place-items: center;
-
-    margin-bottom: 20rem;
 }
 .hobbies .title {
     margin-bottom: 5rem;
@@ -40,7 +38,7 @@
   .hobbies .gr {
     width: 90%;
     display: grid;
-    /* place-items: center; */
+    place-items: center;
     gap: 2rem 0;
     grid-template-areas: 
     'one two three four'
@@ -66,14 +64,12 @@
 }
 .gr .img-cont:nth-child(5) {
     grid-area: five;
-    top:var(--top);
 }
 .gr .img-cont:nth-child(6) {
     grid-area: six;
 }
 .gr .img-cont:nth-child(7) {
     grid-area: seven;
-    top: var(--top);
 }
 .gr .img-cont:nth-child(8) {
     grid-area: eight;
@@ -130,3 +126,85 @@
     height: 20rem;
 }
 
+
+@media (max-width: 1365px) {
+    .hobbies .gr {
+        grid-template-areas: 
+        'one two three'
+        'one five three'
+        'six p four'
+        'six eight seven';
+        width: 80%;
+        gap: 5rem;
+    }
+    .gr .img-cont {
+        --top: 0;
+    }
+    .gr .img-cont:nth-child(8) {
+        top: -47rem;
+    }
+    .gr .img-cont:nth-child(6) {
+        top: -35rem;
+    }
+    .gr .img-cont:nth-child(4) {
+        top: -17rem;
+    }
+    .gr .img-cont:nth-child(7) {
+        top: -25rem;
+    }
+}
+@media (max-width: 1200px) {
+    .hobbies .gr {
+        width: 90%;
+        gap: 5rem 2rem;
+    }
+}
+@media (max-width: 1000px) {
+    .hobbies .gr {
+        width: 100%;
+        gap: 5rem 0;
+    }
+}
+@media (max-width: 1200px) {
+    .hobbies .gr {
+        grid-template-areas: 
+        'one two'
+        'one three'
+        'four five'
+        'six eight'
+        'six seven'
+        ;
+        width: 80%;
+        gap: 5rem;
+    }
+    .gr .img-cont:nth-child(7) {
+        top: -47rem;
+    }
+    .gr .img-cont:nth-child(6) {
+        top: -30rem;
+    }
+}
+@media (max-width: 850px) {
+    .hobbies .gr {
+        gap: 5rem 2rem;
+        width: 90%;
+    }
+}
+@media (max-width: 656px) {
+    .hobbies .gr {
+        gap: 5rem 2rem;
+        width: 100%;
+        grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four'
+        'five'
+        'six'
+        'seven'
+        'eight';
+    }
+    .gr .img-cont {
+        top: 0 !important;
+    }
+}
