@@ -51,7 +51,8 @@
     outline: none;
     border: none;
     background-color: #edf2f8;
-    box-shadow: 0 0 .2rem .1rem #000000a6;
+    /* box-shadow: 0 0 .2rem .1rem #000000a6; */
+    border: 1px solid #000000a6;
     font-size: 2rem;
     font-family: var(--txt-font-electrolize);
 
@@ -64,6 +65,7 @@
     padding: 1rem 4rem;
     font-size: 1.5rem;
     border: 1px solid #000000a6;
+    color: #212529;
     background-color: #edf2f8;
     outline: none;
     border-radius: 7px;
@@ -117,11 +119,20 @@
     cursor: pointer;
 }
 .socials span:hover i {
-    animation: hithere 1s ease infinite;
+    -webkit-animation: hithere 1s ease infinite;
+            animation: hithere 1s ease infinite;
 }
 .socials span a {
     color: #212529;
 }
+
+  @-webkit-keyframes hithere {
+    30% { transform: scale(1.2); }
+    40%, 60% { transform: rotate(-20deg) scale(1.2); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+  }
 
   @keyframes hithere {
     30% { transform: scale(1.2); }

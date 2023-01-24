@@ -108,6 +108,15 @@ nav input:checked ~ label i{
 .resume:hover::after {
     border-style: dashed;
 } */
+@-webkit-keyframes rotation {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
 @keyframes rotation {
     from {
         transform: rotate(-360deg);
@@ -228,7 +237,8 @@ nav input:checked ~ label i{
 .home .img img {
     width: 100%;
     border-radius: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     transition: all ease-in-out .5s;
 }
 .home .img:hover img {

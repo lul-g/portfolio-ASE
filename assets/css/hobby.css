@@ -77,6 +77,8 @@
 .gr .img-cont {
     --top: 10rem;
     width: 28rem;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
     height: fit-content !important;
     position: relative;
 
