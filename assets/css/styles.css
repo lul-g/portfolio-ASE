@@ -324,3 +324,8 @@ nav input:checked ~ label i{
         display: none;
     }
 }
+@media (min-width: 600px) and (max-width: 900px) {
+    .home {
+        background: #e4e4e4;
+    }
+}

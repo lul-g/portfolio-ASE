@@ -201,3 +201,8 @@
       height: 20rem;
     }
   }
+  @media (max-width: 600px) {
+    .footer {
+      background: #abadae;
+    }
+  }
