@@ -62,6 +62,9 @@ nav {
     color: var(--txt-clr-primary);
     font-size: 1.5rem;
     box-shadow: 0 0 1rem .1rem #000000a6;
+    font-weight: 600;
+    font-family: var(--txt-font-electrolize);
+
 }
 .flex-center {
     display: flex;
@@ -170,7 +173,7 @@ nav input:checked ~ label i{
     font-size: 6rem;
     color: black;
     text-transform: capitalize;
-    font-family: var(--title-font-nippo);
+    font-family: var(--txt-font-raleway);
 }
 .home .box img {
     width: 7rem;
